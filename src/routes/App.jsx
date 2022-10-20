@@ -1,24 +1,25 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Main } from '../components/Main';
 import Home from '../pages/Home';
+import Footer from '../components/Footer'
+import { PostsPage } from '../pages/PostsPage'
+import { PostPage } from '../pages/PostPage'
 import NotFound from '../pages/NotFound';
 
 const App = () => {
     return (
-        <BrowserRouter>
-            {' '}
-            {/*encapsula la navegacion de la app*/}
-
+        <HashRouter>
+            <Main />
             <Routes>
                 <Route path="/" element={<Home />} />
-                {/* <Route path="/articulos" element={<Articulos />} />
-                  <Route path="/checkout/information" element={<Information />} />
-                  <Route path="/checkout/payment" element={<Payments />} />
-                  <Route path="/checkout/success" element={<Success />} /> */}
+                <Route path="/blogs" element={<PostsPage />} />
+                <Route path="/blog/:slug" element={<PostPage />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
+            <Footer />
 
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
