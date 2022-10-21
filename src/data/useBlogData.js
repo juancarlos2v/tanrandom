@@ -1,4 +1,4 @@
-const blogData = [
+const blogdata = [
   {
     id: 1,
     title: "El origen del humanisno",
@@ -22,4 +22,4 @@ const blogData = [
   },
 ];
 
-export { blogData };
+export { blogdata };

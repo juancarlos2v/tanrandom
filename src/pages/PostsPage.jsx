@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { blogData } from '../data/useBlogData'
+import { Link } from 'react-router-dom';
+import { blogdata } from '../data/useBlogData'
 
 const PostsPage = () => {
     const [loading, setLoading] = useState(true);
@@ -18,18 +19,22 @@ const PostsPage = () => {
                 ) : (
                     <div>
                         <ul>
-                            {blogData.map(post => (
-                                <li>
-                                    <h3>{post.title}</h3>
-                                    <p>{post.autor}</p>
-                                    <p>{post.article} </p>
-                                </li>
+                            {blogdata.map(post => (
+                                <BlogLink key={post.id} post={post} />
                             ))}
                         </ul>
                     </div>
                 )
             }
         </>
+    )
+}
+
+const BlogLink = ({ post }) => {
+    return (
+        <li>
+            <Link to={`/blog/${post.id}`} >{post.title} </Link>
+        </li>
     )
 }
 

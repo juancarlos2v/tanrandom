@@ -1,16 +1,25 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
-import { blogData } from '../data/useBlogData';
+import { useNavigate, useParams } from 'react-router-dom'
+import { blogdata } from '../data/useBlogData';
 
 const PostPage = () => {
+
+  const navigate = useNavigate();
   const { slug } = useParams();
-  const post = blogData.find(post.id === slug)
+  const blogpost = blogdata.find(blog => blog.id == slug)
+
+  const returnBlog = () => {
+    //navigate(-1) ultima url
+    navigate('/blog')
+  }
 
   return (
     <>
-      <h2>{post.title}</h2>
-      <p>{post.autor}</p>
-      <p>{post.description}</p>
+      <h2>{blogpost.title}</h2>
+      <p>{blogpost.autor}</p>
+      <p>{blogpost.article}</p>
+
+      <button onClick={returnBlog} >Volver</button>
     </>
   )
 }
