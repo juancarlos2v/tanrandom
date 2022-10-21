@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import Login from './Login';
 
 const routes = [];
 routes.push({
@@ -9,17 +10,22 @@ routes.push({
 });
 routes.push({
     id: 2,
-    to: '/blogs',
-    text: 'Articulos'
-})
+    to: '/blog',
+    text: 'Notas'
+});
 
 
 const Main = () => {
+    const [login, setLogin] = useState(false)
+    const showLogin = () => {
+        setLogin(!login)
+    }
+
     return (
         <nav>
             <ul>
                 {routes.map(route => (
-                    <li key={route.id}>
+                    <li key={route.to}>
                         <NavLink style={({ isActive }) => ({
                             color: isActive ? 'red' : 'blue',
                         })}
@@ -29,6 +35,12 @@ const Main = () => {
                     </li>
                 ))}
             </ul>
+
+            <Login />
+            {/* {
+                showLogin? <Login />
+                
+            } */}
         </nav>
     )
 }
