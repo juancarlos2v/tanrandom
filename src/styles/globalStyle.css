@@ -1,0 +1,11 @@
+:root {
+  --purpura: #2d1e2f;
+  --rosa: #fb64c1;
+  --violeta: #8950fa;
+  --naranja: #dda018;
+  --amarillo: #e3d222;
+}
+li {
+  list-style: none;
+  text-decoration: none;
+}

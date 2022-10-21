@@ -1,0 +1,7 @@
+footer {
+  background-color: var(--purpura);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}

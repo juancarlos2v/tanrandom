@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../context/auth';
 import Login from './Login';
+import '../styles/components/main.css'
 
 const routes = [];
 routes.push({
@@ -18,10 +19,22 @@ routes.push({
 });
 routes.push({
     id: 3,
-    to: '/profile',
-    text: 'Perfil',
-    private: true
+    to: '/chapters',
+    text: 'Episodios Completos',
+    private: false
 });
+routes.push({
+    id: 4,
+    to: '/contacto',
+    text: 'Contacto',
+    private: false
+});
+// routes.push({
+//     id: 3,
+//     to: '/profile',
+//     text: 'Perfil',
+//     private: true
+// });
 // routes.push({
 //     id: 4,
 //     to: '/login',
@@ -37,13 +50,16 @@ const Main = () => {
 
     return (
         <nav>
+            <div className="banner">
+                <p>...</p>
+            </div>
             <ul>
                 {routes.map(route => {
                     if (route.private && !auth.user) return null
                     return (
                         <li key={route.to}>
                             <NavLink style={({ isActive }) => ({
-                                color: isActive ? 'red' : 'blue',
+                                color: isActive ? 'white' : 'white',
                             })}
                                 to={route.to} end>
                                 {route.text}
