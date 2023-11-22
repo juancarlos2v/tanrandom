@@ -1,18 +1,42 @@
 .banner {
-  height: 10rem;
+  height: 20rem;
   width: 100%;
-  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  background-color: gray;
+  font-size: 2rem;
+  align-items: center;
+}
+.phone {
+  height: 15rem;
+  width: 7rem;
+  border-radius: 1rem;
+  background-color: black;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+.title > h1 {
+  margin: 0 !important;
 }
 
-ul {
+.container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1rem;
 }
 
-li {
+.route-container {
   background-color: var(--purpura);
-
-  width: 10rem;
   text-align: center;
-  padding: 0.6rem 0 0.6rem 0;
+  padding: 1rem;
+  width: 15rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }

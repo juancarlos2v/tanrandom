@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { useAuth } from '../context/auth';
+import { SpotifyIcon } from '../icons/SpotifyIcon'
 import Login from './Login';
 import '../styles/components/main.css'
 
@@ -51,24 +52,29 @@ const Main = () => {
     return (
         <nav>
             <div className="banner">
-                <p>...</p>
+                <div className="phone"></div>
+                <div className='title'>
+                    <h1>ESCUCHA LOS EPISODIOS</h1>
+                    <h1>  COMPLETOS EN SPOTIFY</h1>
+                </div>
             </div>
-            <ul>
+            <div className='container'>
                 {routes.map(route => {
                     if (route.private && !auth.user) return null
                     return (
-                        <li key={route.to}>
-                            <NavLink style={({ isActive }) => ({
+                        <div key={route.to}>
+                            <NavLink className='route-container' style={({ isActive }) => ({
                                 color: isActive ? 'white' : 'white',
                             })}
                                 to={route.to} end>
                                 {route.text}
                             </NavLink>
-                        </li>)
+                        </div>
+                    )
                 })}
-            </ul>
+            </div>
 
-            <Login />
+            {/* <Login /> */}
 
         </nav>
     )

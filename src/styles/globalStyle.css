@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@400;500;700&display=swap");
+
 :root {
   --purpura: #2d1e2f;
   --rosa: #fb64c1;
@@ -7,5 +9,25 @@
 }
 li {
   list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+div {
+  font-family: "Antonio", sans-serif;
+}
+body {
+  padding: 1rem;
+}
+
+p {
+  margin: 0;
+}
+
+a {
   text-decoration: none;
 }

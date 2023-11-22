@@ -10,6 +10,7 @@ const AuthProvider = ({ children }) => {
 
   const login = ({ username }) => {
     setUser({ username })
+
     navigate('/profile')
   }
 

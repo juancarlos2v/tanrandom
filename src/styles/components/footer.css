@@ -4,4 +4,16 @@ footer {
   padding: 2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.divider {
+  height: 0.2rem;
+  background-color: white;
+  width: 10rem;
+}
+.icon-media {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }
