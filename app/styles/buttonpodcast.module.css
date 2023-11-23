@@ -1,0 +1,11 @@
+.button {
+  background-color: var(--pink);
+  height: 2.5rem;
+  width: 6rem;
+  color: var(--purple);
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--yellow);
+}

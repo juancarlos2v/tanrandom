@@ -1,10 +1,17 @@
-import Card from "@components/Card";
+import Episodes from "@layouts/Episodes";
+import Footer from "@layouts/Footer";
+import Header from "@layouts/Header";
+import News from "@layouts/News";
 
 export default function Page() {
     return (
         <>
-            <h1>Hello, Next.js!</h1>
-            <Card />
+            <Header />
+            <div className="p-3">
+                <Episodes />
+                <News />
+            </div>
+            <Footer />
         </>
     )
 }

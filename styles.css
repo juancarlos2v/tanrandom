@@ -1,9 +1,11 @@
 :root {
-  --purpura: #2d1e2f;
-  --rosa: #fb64c1;
+  --purple: #4c2552;
+  --purple-off: #543458;
+  --pink: #fb64c1;
   --violeta: #8950fa;
-  --naranja: #dda018;
-  --amarillo: #e3d222;
+  --orange: #dda018;
+  --yellow: #e3d222;
+  --white: #e2ddeb;
 }
 
 li {
@@ -19,9 +21,6 @@ p,
 div {
   font-family: "Antonio", sans-serif;
 }
-body {
-  padding: 1rem;
-}
 
 p {
   margin: 0;
@@ -29,4 +28,8 @@ p {
 
 a {
   text-decoration: none;
+}
+
+.navbar {
+  padding: 0;
 }
