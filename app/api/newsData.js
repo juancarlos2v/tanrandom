@@ -1,4 +1,4 @@
-const blogdata = [
+const news = [
   {
     id: 1,
     title: "Taylor en Argentina",
@@ -24,4 +24,4 @@ const blogdata = [
   },
 ];
 
-export { blogdata };
+export { news };
