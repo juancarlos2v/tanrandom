@@ -6,15 +6,20 @@ const News = () => {
     return (
         <div>
             <h2>Novedades</h2>
-            {
-                news.map((n, index) => (
-                    <NewsCard key={index} data={{
-                        title: n.title,
-                        autor: n.autor
-                    }
-                    } />
-                ))
-            }
+            <div className="d-flex flex-column">
+                {
+                    news.map((n, index) => (
+                        <NewsCard key={index} data={{
+                            title: n.title,
+                            autor: n.autor,
+                            cover: n.cover,
+                            date: n.date,
+                            tags: n.tags
+                        }
+                        } />
+                    ))
+                }
+            </div>
 
         </div>
     )

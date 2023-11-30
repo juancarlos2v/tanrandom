@@ -19,10 +19,6 @@ const Episodes = ({ items }) => {
                 settings: {
                     slidesToShow: 2,
                 },
-                breakpoint: 500, // Ajusta este valor según el punto de quiebre deseado
-                settings: {
-                    slidesToShow: 3,
-                },
             },
         ],
     };
