@@ -1,0 +1,7 @@
+.container {
+  background-color: var(--purple);
+  padding: 3rem;
+  padding: 1rem;
+  height: 15rem;
+  color: var(--white);
+}

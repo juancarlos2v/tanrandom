@@ -1,0 +1,35 @@
+:root {
+  --purple: #4c2552;
+  --purple-off: rgba(83, 51, 87, 0.8);
+  --pink: #fb64c1;
+  --violeta: #8950fa;
+  --orange: #dda018;
+  --yellow: #e3d222;
+  --white: #e2ddeb;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+div {
+  font-family: "Antonio", sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 0;
+}
