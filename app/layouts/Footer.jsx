@@ -4,11 +4,11 @@ import Image from 'next/image'
 import style from "@styles/footer.module.css"
 
 const Footer = () => {
-    const number = 30;
+    const number = 55;
     return (
         <div className={`${style.container}  col-12 d-flex flex-column justify-content-around`}>
             <h3>Seguinos</h3>
-            <div className='col-3 d-flex justify-content-between'>
+            <div className='col-6 d-flex justify-content-between'>
                 <Image
                     src="/ig.png"
                     width={number}
@@ -34,7 +34,10 @@ const Footer = () => {
                     alt="tanrandom"
                 />
             </div>
-            <Logo />
+            <div className='mt-3'>
+                <Logo />
+                <span>Copyright©2023</span>
+            </div>
         </div >
     )
 }

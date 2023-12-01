@@ -20,7 +20,3 @@
   padding: 0.3rem 0.9rem 0.3rem 0.9rem;
   border-radius: 1rem;
 }
-
-.card:hover {
-  transform: scale(1.5);
-}

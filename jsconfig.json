@@ -5,7 +5,8 @@
       "@components/*": ["./app/components/*"],
       "@layouts/*": ["./app/layouts/*"],
       "@styles/*": ["./app/styles/*"],
-      "@images/*": ["./public/*"]
+      "@images/*": ["./public/*"],
+      "@icons/*": ["./app/icons/*"]
     }
   }
 }

@@ -4,6 +4,7 @@ import Header from "@layouts/Header";
 import News from "@layouts/News";
 
 export default function Page() {
+
     return (
         <>
             <Header />
