@@ -23,13 +23,13 @@ const Episodes = ({ items }) => {
         ],
     };
     return (
-        <div>
-            <div className='d-flex justify-content-between'>
+        <div className="mb-4">
+            <div className='d-flex justify-content-between mb-1'>
                 <h2>Episodios</h2>
-                <div className=' d-flex justify-content-between btns'>
+                {/* <div className=' d-flex justify-content-between btns'>
                     <Button> - </Button>
                     <Button>  + </Button>
-                </div>
+                </div> */}
             </div>
             <Slider {...settings} >
                 {
