@@ -9,8 +9,8 @@ const NewsCard = ({ data }) => {
             <div style={{ backgroundImage: `url(${data.cover})` }} className={`${style.card} col-sm-12 col-lg-6`}>
                 <div className="d-flex">
                     {tags.map((t, index) =>
-                        <div className={style.tag}>
-                            <p key={index}>{t}</p>
+                        <div className={style.tag} key={index}>
+                            <p >{t}</p>
                         </div>
                     )}
                 </div>
