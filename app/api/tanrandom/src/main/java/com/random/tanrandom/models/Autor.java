@@ -23,8 +23,8 @@ public class Autor {
     private Long id;
     private String name;
     private String lastName;
-    @OneToMany(mappedBy="card", fetch=FetchType.EAGER)
-    private Set<Post> expenses = new HashSet<>();
+    @OneToMany(mappedBy="autor", fetch=FetchType.EAGER)
+    private Set<Post> posts = new HashSet<>();
 
 
 }

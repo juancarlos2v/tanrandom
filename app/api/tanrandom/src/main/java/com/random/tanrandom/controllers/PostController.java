@@ -29,7 +29,7 @@ public class PostController {
     @PostMapping("")
     public ResponseEntity<Object> addPost(@RequestBody Post post){
         postService.addPost(post);
-        return new ResponseEntity<>("Solicitud procesada con exito.", HttpStatus.CREATED);
+        return new ResponseEntity<>("Post creado.", HttpStatus.CREATED);
     }
 
     @PatchMapping("")
