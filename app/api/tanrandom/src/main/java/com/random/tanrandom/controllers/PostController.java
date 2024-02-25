@@ -32,9 +32,9 @@ public class PostController {
         return new ResponseEntity<>("Post creado.", HttpStatus.CREATED);
     }
 
-    @PatchMapping("")
-    public  ResponseEntity<Object> updatePost(){
-        postService.updatePost();
+    @PutMapping ("{id}")
+    public  ResponseEntity<Object> updatePost(@PathVariable Long id, @RequestBody Post post){
+        postService.updatePost(id,post);
         return new ResponseEntity<>("Solicitud procesada con exito.", HttpStatus.OK);
     }
 
